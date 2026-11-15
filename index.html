@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/fotosm.jpeg" alt="foto de perfil" width="200px">
+        <h1>Shirley Maria</h1>
+        <h3>Aspirante a Desenvolvedora Mobile</h3>
+        <button id="btn-tema" class="btn-tema" aria-label="Alterar tema"> Modo escuro </button>        
+        <hr>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sobre mim</h2>
+            <p>🤯 Estudante de Engenharia de Software<br>
+               🌱 Bootcamper 1000devs da SoulCode<br>
+               🪂 Designer Gráfico em transição de carreira<br>
+               🌎 Belo Horizonte / MG<br>
+               📲 Interesse em Desenvolvimento de Aplicações Mobile, Cyber Segurança, Dados e Inteligência Artificial.</p>
+        </section><br>
+        <section>
+            <h2>Competências e Habilidades</h2>
+            <ul>
+                <li>
+                    Lógica de Programação: <progress value="40" max="100"></progress>
+                </li>
+                <li>
+                    Python: <progress value="20" max="100"></progress>
+                </li>
+                <li>
+                    HTML5: <progress value="30" max="100"></progress>
+                </li>
+                <li>
+                    CSS3: <progress value="20" max="100"></progress>
+                </li>
+                <li>
+                    Javascript: <progress value="20" max="100"></progress>
+                </li>
+                <li>
+                    Banco de Dados SQL: <progress value="30" max="100"></progress>
+                </li>
+                <li>
+                    Git/GitHub: <progress value="40" max="100"></progress>
+                </li>
+                <li>
+                    Cyber Segurança: <progress value="20" max="100"></progress>
+                </li>
+                <li>
+                    Inteligência Artificial: <progress value="40" max="100"></progress>
+                </li>
+                <li>
+                    Gestão de Projetos: <progress value="50" max="100"></progress>
+                </li>
+
+            </ul>
+        </section><br>
+        <section>
+            <h2>Meus projetos</h2>
+            <details>
+                <summary>Clique para visualizar os projetos</summary>
+                <ul>
+                    <li>Jogo dos números</li>
+                    <li>Calculadora</li>
+                    <li>Guia Belo Horizonte</li>
+                </ul>
+            </details>
+        </section><br>
+        <form id="Project-form">
+            <input type="text" id="Project-input" placeholder="Adicionar um novo projeto">
+            <button type="submit">Novo projeto></button>
+        </form>
+
+        <section>
+            <h2>Entre em contato</h2>
+            <form>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome"><br><br>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" placeholder="seu@email.com"><br><br>
+                <label for="mensagem">Mensagem</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem..."></textarea><br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section><br>
+    </main>
+    <script src="app.js"></script>
+    <hr>
+    <footer>
+        <p>Conecte-se comigo</p>
+        <a href="http://github.com" target="\_blank">Github</a>
+        <a href="http://github.com" target="\_blank">LinkedIn</a>
+        <p><small>&copy; 2026 - Todos os direitos reservados</small></p>
+    </footer>
+</body>
+</html>

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
@@ -12,90 +14,248 @@
         <img src="img/fotosm.jpeg" alt="foto de perfil" width="200px">
         <h1>Shirley Maria</h1>
         <h3>Aspirante a Desenvolvedora Mobile</h3>
-        <button id="btn-tema" class="btn-tema" aria-label="Alterar tema"> Modo escuro </button>        
+        <button
+            id="btn-tema"
+            class="theme-switch"
+            type="button"
+            aria-label="Ativar tema escuro"
+            aria-pressed="false">
+            <span class="theme-switch__thumb">
+                <span class="theme-switch__icon" aria-hidden="true">☀</span>
+            </span>
+        </button>        
         <hr>
     </header>
 
+    
     <main>
-        <section>
+
+        <!-- SOBRE MIM -->
+        <section id="sobre">
             <h2>Sobre mim</h2>
-            <p>🤯 Estudante de Engenharia de Software<br>
-               🌱 Bootcamper 1000devs da SoulCode<br>
-               🪂 Designer Gráfico em transição de carreira<br>
-               🌎 Belo Horizonte / MG<br>
-               📲 Interesse em Desenvolvimento de Aplicações Mobile, Cyber Segurança, Dados e Inteligência Artificial.</p>
-        </section><br>
-        <section>
+
+            <p>
+                🤯 Estudante de Engenharia de Software<br>
+                🌱 Bootcamper 1000devs da SoulCode<br>
+                🪂 Designer Gráfico em transição de carreira<br>
+                🌎 Belo Horizonte / MG<br>
+                📲 Interesse em Desenvolvimento de Aplicações Mobile,
+                Cyber Segurança, Dados e Inteligência Artificial.
+            </p>
+        </section>
+
+
+        <!-- COMPETÊNCIAS E HABILIDADES -->
+        <section id="competencias">
             <h2>Competências e Habilidades</h2>
-            <ul>
-                <li>
-                    Lógica de Programação: <progress value="40" max="100"></progress>
+
+            <ul class="skills-grid">
+
+                <li class="skill-item">
+                    <span>Lógica de Programação</span>
+                    <progress value="40" max="100"></progress>
                 </li>
-                <li>
-                    Python: <progress value="20" max="100"></progress>
+
+                <li class="skill-item">
+                    <span>Python</span>
+                    <progress value="25" max="100"></progress>
                 </li>
-                <li>
-                    HTML5: <progress value="30" max="100"></progress>
+
+                <li class="skill-item">
+                    <span>HTML5</span>
+                    <progress value="50" max="100"></progress>
                 </li>
-                <li>
-                    CSS3: <progress value="20" max="100"></progress>
+
+                <li class="skill-item">
+                    <span>CSS3</span>
+                    <progress value="25" max="100"></progress>
                 </li>
-                <li>
-                    Javascript: <progress value="20" max="100"></progress>
+
+                <li class="skill-item">
+                    <span>JavaScript</span>
+                    <progress value="25" max="100"></progress>
                 </li>
-                <li>
-                    Banco de Dados SQL: <progress value="30" max="100"></progress>
+
+                <li class="skill-item">
+                    <span>Banco de Dados SQL</span>
+                    <progress value="30" max="100"></progress>
                 </li>
-                <li>
-                    Git/GitHub: <progress value="40" max="100"></progress>
+
+                <li class="skill-item">
+                    <span>Git/GitHub</span>
+                    <progress value="40" max="100"></progress>
                 </li>
-                <li>
-                    Cyber Segurança: <progress value="20" max="100"></progress>
+
+                <li class="skill-item">
+                    <span>Cyber Segurança</span>
+                    <progress value="20" max="100"></progress>
                 </li>
-                <li>
-                    Inteligência Artificial: <progress value="40" max="100"></progress>
+
+                <li class="skill-item">
+                    <span>Inteligência Artificial</span>
+                    <progress value="40" max="100"></progress>
                 </li>
-                <li>
-                    Gestão de Projetos: <progress value="50" max="100"></progress>
+
+                <li class="skill-item">
+                    <span>Gestão de Projetos</span>
+                    <progress value="50" max="100"></progress>
                 </li>
 
             </ul>
-        </section><br>
-        <section>
-            <h2>Meus projetos</h2>
-            <details>
-                <summary>Clique para visualizar os projetos</summary>
-                <ul>
-                    <li>Jogo dos números</li>
-                    <li>Calculadora</li>
-                    <li>Guia Belo Horizonte</li>
-                </ul>
-            </details>
-        </section><br>
-        <form id="Project-form">
-            <input type="text" id="Project-input" placeholder="Adicionar um novo projeto">
-            <button type="submit">Novo projeto></button>
-        </form>
+        </section>
 
-        <section>
-            <h2>Entre em contato</h2>
-            <form>
-                <label for="nome">Nome:</label><br>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome"><br><br>
-                <label for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email" placeholder="seu@email.com"><br><br>
-                <label for="mensagem">Mensagem</label><br>
-                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem..."></textarea><br><br>
-                <button type="submit">Enviar</button>
+
+        <!-- IDIOMAS -->
+        <section id="idiomas">
+            <h2>Idiomas</h2>
+
+            <div class="languages-grid">
+
+                <article class="language-card">
+                    <span class="language-code">PT</span>
+                    <h3>Português</h3>
+                    <p>Idioma nativo</p>
+                </article>
+
+                <article class="language-card">
+                    <span class="language-code">EN</span>
+                    <h3>Inglês</h3>
+                    <p>Leitura intermediária</p>
+                    <p>Escrita intermediária</p>
+                    <p>Conversação em desenvolvimento</p>
+                    <small>Estudando com foco em tecnologia.</small>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- PROJETOS -->
+        <section id="projetos">
+            <h2>Meus projetos</h2>
+
+            <!-- Os cards serão inseridos dinamicamente pelo TypeScript -->
+            <div id="project-list" class="project-grid">
+            </div>
+
+            <!-- Botão para abrir o formulário -->
+            <button
+                type="button"
+                id="toggle-project-form"
+                class="add-project-toggle"
+                aria-expanded="false"
+                aria-controls="project-form">
+                + Adicionar projeto
+            </button>
+
+            <!-- Formulário inicialmente recolhido -->
+            <form id="project-form" hidden>
+
+                <label for="project-name">Nome do projeto:</label>
+                <input
+                    type="text"
+                    id="project-name"
+                    name="project-name"
+                    placeholder="Título do projeto..." required>
+
+                <label for="project-technologies">Tecnologias utilizadas:</label>
+                <input
+                    type="text"
+                    id="project-technologies"
+                    name="project-technologies"
+                    placeholder="Ex.: HTML, CSS, TypeScript" required>
+
+                <label for="project-url">Link do projeto:</label>
+                <input
+                    type="url"
+                    id="project-url"
+                    name="project-url"
+                    placeholder="https://..." required>
+
+                <label for="project-image">Imagem de capa (URL):</label>
+                <input
+                    type="url"
+                    id="project-image"
+                    name="project-image"
+                    placeholder="https://..." required>
+
+                <!-- Pré-visualização da imagem -->
+                <div id="image-preview-container" hidden>
+                    <p>Pré-visualização da capa:</p>
+
+                    <img
+                        id="project-image-preview"
+                        src=""
+                        alt="Pré-visualização da capa do projeto">
+                </div>
+
+                <button type="submit">Salvar projeto</button>
+
             </form>
-        </section><br>
+        </section>
+
+
+        <!-- CONTATO -->
+        <section id="contato">
+            <h2>Converse comigo</h2>
+
+            <form class="contact-form">
+                <label for="nome">Nome:</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="seu@email.com" required>
+
+                <label for="telefone">Telefone:</label>
+                <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="(31) 99999-9999" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="5"
+                    placeholder="Escreva sua mensagem..." required></textarea>
+
+                <button type="submit">Enviar</button>
+                <p id="contact-feedback" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+
     </main>
+
     <script src="app.js"></script>
     <hr>
+    
     <footer>
         <p>Conecte-se comigo</p>
-        <a href="http://github.com" target="\_blank">Github</a>
-        <a href="http://github.com" target="\_blank">LinkedIn</a>
+        <div class="social-links">
+            <a href="https://github.com/shirley-maria"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Github">
+            <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/shirley-maria-dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+
         <p><small>&copy; 2026 - Todos os direitos reservados</small></p>
     </footer>
 </body>
